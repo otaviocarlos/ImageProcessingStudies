@@ -13,7 +13,7 @@ public class PIMcodes {
         ImagePlus oImg;
         ImageAccess img;
         
-        oImg = new Opener().openImage("/home/carlos/Área de Trabalho/PIM/images/keys.tif");
+        oImg = new Opener().openImage(""); //a .tif image path here
         img = new ImageAccess(oImg.getProcessor());
         
         img.show("original");
