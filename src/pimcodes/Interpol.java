@@ -81,7 +81,7 @@ public class Interpol {
                 
                 double dx = xo-mx/2; //dist(xo, centerX of new image)
 		double dy = yo-my/2;
-		double ox = centerx + dx*scalex; //dist of xo and the original image center
+		double ox = centerx + dx*scalex; //getting dx position relative to the original image
 		double oy = centery + dy*scaley;
                 
                 value = getInterpolatedPixelNearestNeighbor(input, ox, oy);
