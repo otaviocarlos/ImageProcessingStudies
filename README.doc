@@ -1,0 +1,21 @@
+A simple NetBeans project with java classes containing studies and codes passed in the Medical Image Processing (PIM) discipline.
+
+Usage:
+
+Each class of the project is an diferent study. Each class contain a run method. You can use these method to test the code and implement your own algorithm. 
+
+In the Main class you'll need to call the run method of the content you're studying, specifiying your image path (only .tif images), and passing as argument the img variable. 
+
+There will be created two windows as return: the original image, and the output image (after processing).  
+
+# portuguese:
+
+Um projeto simples do NetBeans com classes Java contendo estudos e códigos passados na disciplina de Processamento de Imagens Médicas (PIM).
+
+Uso:
+
+Cada classe do projeto é um estudo diferente. Cada classe contém um método de execução run. Você pode usar esse método para testar o código e implementar seu próprio algoritmo para estudos.
+
+Na classe Main, você precisará chamar o método run do conteúdo que está estudando, especificando o caminho da sua imagem (apenas imagens .tif), e passando como argumento a variável img.
+
+Serão criadas duas janelas como retorno: a imagem original e a imagem de saída (após o processamento).
