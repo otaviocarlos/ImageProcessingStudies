@@ -2,11 +2,7 @@ package pimcodes;
 public class Morfo {
     
     static public ImageAccess run(ImageAccess input){
-        ImageAccess A = input;
-        ImageAccess C = doErosion(input);
-        
-        C = doComplement(C);
-        input.subtract(C, A);
+        input = doErosion(input);
         return input;
     }
     
@@ -63,23 +59,5 @@ public class Morfo {
         img = doErosion(img);
         return img;
 	}
-        
-        static public ImageAccess doComplement(ImageAccess img){
-            int nx = img.getWidth();
-            int ny = img.getHeight();
-            ImageAccess output = new ImageAccess(nx,ny);
-            
-            for(int i=0;i<nx;i++)
-                for(int j=0;j<ny;j++){
-                    if(img.getPixel(i, j)>0){
-                        output.putPixel(i, j, 0);
-                    }
-                    else{
-                        output.putPixel(i, j, 1);
-                    }
-                }
-            
-            return output;
-        }
         
 }
